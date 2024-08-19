@@ -69,14 +69,14 @@ function agregarAnimal(animal) {
     <button class="btn btn-info btn-preview">Vista Previa</button>
   `;
 
- 
+
   animalDiv.querySelector(".btn-sound").addEventListener("click", () => {
-    const reproductor = document.getElementById("reproductor");
+    const reproductor = document.getElementById("player");
     reproductor.src = animal.sonido;
     reproductor.play();
   });
 
- 
+
   animalDiv.querySelector(".btn-preview").addEventListener("click", () => {
     const modal = document.getElementById("modal-body-content");
     modal.innerHTML = `
