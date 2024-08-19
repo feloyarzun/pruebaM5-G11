@@ -80,7 +80,7 @@ function agregarAnimal(animal) {
   animalDiv.querySelector(".btn-preview").addEventListener("click", () => {
     const modal = document.getElementById("modal-body-content");
     modal.innerHTML = `
-      <img src="${animal.img}" class="img"/>
+      <img src="${animal.img}" class="img-fluid"/>
       <p><strong>Nombre:</strong> ${animal.nombre}</p>
       <p><strong>Edad:</strong> ${animal.edad}</p>
       <p><strong>Comentarios:</strong> ${animal.comentarios}</p>
